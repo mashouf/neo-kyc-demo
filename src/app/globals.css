@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "../styles/theme.css";
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-vazirmatn), Tahoma, Arial, sans-serif;
+}
+* {
+  border-color: var(--border);
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button:not(:disabled),
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+html[lang="fa"] {
+  letter-spacing: normal;
+}
+html[lang="fa"] h1,
+html[lang="fa"] h2,
+html[lang="fa"] h3 {
+  line-height: 1.6;
+  letter-spacing: normal;
+}
+html[lang="fa"] p {
+  line-height: 1.9;
+}
+[dir="rtl"] .lucide-arrow-right,
+[dir="rtl"] .lucide-arrow-up-right,
+[dir="rtl"] .lucide-chevron-right {
+  transform: scaleX(-1);
+}
